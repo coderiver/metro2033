@@ -46,6 +46,23 @@
 			}
 		}
 	}
+	.header__logo{
+		position: absolute;
+		left: 432px;
+		top: 51px;
+		width: 213px;
+		height: 164px;
+		z-index: 10;
+		a{
+			display: block;
+			@extend %hide-text;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
 }
 .socials{
 	list-style: none;

@@ -1,4 +1,4 @@
-.socials a, .mainslider .mainslider__nav a { font: 0/0 a; text-shadow: none; color: transparent; }
+.header .header__logo a, .socials a, .mainslider .mainslider__nav a { font: 0/0 a; text-shadow: none; color: transparent; }
 
 @font-face { font-family: 'Rodchenko'; src: url("fonts/rodchenko.eot"); src: url("fonts/rodchenko.eot") format("embedded-opentype"), url("fonts/rodchenko.woff") format("woff"), url("fonts/rodchenko.ttf") format("truetype"), url("fonts/rodchenko.svg#RodchenkoCTTRegular") format("svg"); }
 
@@ -37,6 +37,8 @@ a { color: #FFB23D; }
 .header .nav li { float: left; }
 .header .nav a { float: left; margin-right: 36px; color: #f8ead6; text-decoration: none; }
 .header .nav a:hover { color: #fff; }
+.header .header__logo { position: absolute; left: 432px; top: 51px; width: 213px; height: 164px; z-index: 10; }
+.header .header__logo a { display: block; position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
 
 .socials { list-style: none; }
 .socials li { float: left; }

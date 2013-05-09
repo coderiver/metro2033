@@ -1,0 +1,65 @@
+.header{
+	height: 222px;
+	position: relative;
+	.socials{
+		position: absolute;
+		left: 17px;
+		top: 26px;
+	}
+	.header__register{
+		@extend %worn-button;
+		position: absolute;
+		top: 26px;
+		right: 0;
+		height: 30px;
+		line-height: 30px;
+		font-size: 14px;
+	}
+	.header__bg{
+		position: absolute;
+		top: 53px - 9px;
+		left: 0;
+		@include image-size('header.png');
+		background: url(../img/header.png) no-repeat 0 0;
+	}
+	.nav{
+		position: absolute;
+		z-index: 10;
+		list-style: none;
+		top: 116px;
+		left: 36px;
+		font-size: 25px;
+		color: #f8ead6;
+		text-shadow:0 1px 1px #000;
+		@include rfont;
+		line-height: 1;
+		li{
+			float: left;
+		}
+		a{
+			float: left;
+			margin-right: 36px;
+			color: #f8ead6;
+			text-decoration: none;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+.socials{
+	list-style: none;
+	li{
+		float: left;
+	}
+	a{
+		@extend %hide-text;
+		margin-right: 9px;
+		display: inline-block;
+	}
+	@each $s in fb,vk,tw,plus{
+		.socials__#{$s}{
+			@include s($icons, socials__#{$s});
+		}
+	}
+}

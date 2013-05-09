@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Rodchenko';
+    src: url('fonts/rodchenko.eot');
+    src: url('fonts/rodchenko.eot') format('embedded-opentype'),
+         url('fonts/rodchenko.woff') format('woff'),
+         url('fonts/rodchenko.ttf') format('truetype'),
+         url('fonts/rodchenko.svg#RodchenkoCTTRegular') format('svg');
+}
+@mixin rfont(){
+	font-family: "Rodchenko",sans-serif;
+}

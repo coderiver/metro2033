@@ -35,6 +35,7 @@
 			margin-right: 8px;
 			@include s($icons,mainslider__nav);
 			@extend %hide-text;
+			height: 14px;
 			&.activeSlide{
 				@include s($icons,mainslider__navhere);
 			}

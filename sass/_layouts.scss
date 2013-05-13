@@ -10,7 +10,8 @@ $width: 1090px;
 }
 .l{
 	width: 100%;
-	display: inline-block;
+	overflow: hidden;
+	margin-right: -37px;
 	.l-col1{
 		float:left;
 		width: 20%;
@@ -19,6 +20,14 @@ $width: 1090px;
 	.l-col2{
 		float:right;
 		width: 70%;
+	}
+	.l-col{
+		width: 338px;
+		margin-right: 35px;
+		float: left;
+		&.l-col_last{
+			margin-right: 0;
+		}
 	}
 }
 

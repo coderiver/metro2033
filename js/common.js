@@ -16,4 +16,16 @@ $(document).ready(function() {
 	function onAfter(currSlideElement, nextSlideElement, options, forwardFlag){
 		$('.slide__pic', nextSlideElement).removeClass('is-hidden').addClass('is-animated');
 	}
+
+
+
+	if ($('.news').length>0) {
+		pane = $('.news');
+		pane.jScrollPane({
+	  	autoReinitialise: true,
+	  	hideFocus: true,
+	  	animateTo: true
+	});
+	var api = pane.data('jsp');
+};
 });

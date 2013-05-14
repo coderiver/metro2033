@@ -57,12 +57,13 @@
 	}
 }
 .news{
-	width: 320px;
-	margin: 0 auto 10px auto;
+	width: 322px;
+	margin: 0 0 10px 10px;
 	height: 265px;
 	overflow: auto;
 }
 .newsentry{
+	padding-right: 10px;
 	margin-bottom: 24px;
 	a{
 		display: block;
@@ -77,7 +78,7 @@
 		font-size: 9px;
 		text-transform: uppercase;
 		background: #614F42;
-		padding: 3px 5px;
+		padding: 5px 5px 3px;
 		line-height: 1;
 		color: #fff;
 		color: rgba(#fff, .8);

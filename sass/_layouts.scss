@@ -30,4 +30,16 @@ $width: 1090px;
 		}
 	}
 }
-
+.cols{
+	width: 1000px;
+	margin: 0 auto;
+	@extend %clr;
+}
+.cols__left{
+	float: left;
+	width: 771px;
+}
+.cols__right{
+	float: right;
+	width: 215px;
+}

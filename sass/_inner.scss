@@ -1,0 +1,286 @@
+// Normally innerpages styles
+//breadcrumbs
+.breadcrumbs{
+	position: relative;
+	margin: -32px 0 15px 0;
+	padding-left: 25px;
+	height: 32px;
+	z-index: 10;
+	li{
+		float: left;
+		margin-right: 15px;
+		list-style: none;
+	}
+	a, span{
+		display: block;
+		color: #c5c0bc;
+		text-transform: uppercase;
+		font-size: 9px;
+	}
+	a{
+		padding: 3px 0 0 7px;
+	}
+	span{
+		position: relative;
+		padding: 3px 17px 0 0;
+		cursor: pointer;
+		&:after{
+			content: "";
+			position: absolute;
+			top: 6px;
+			right: 0;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 5px 3.5px 0 3.5px;
+			border-color: #a09c97 transparent transparent transparent;
+		}
+	}
+}
+.breadcrumbs__link{
+	@include s($icons, bc-main);
+}
+//book-banner
+.book-banner{
+	position: relative;
+	margin-bottom: 30px;
+}
+.book-banner__detail{
+	position: absolute;
+	top: 50px;
+	left: 60px;
+	width: 570px;
+	p {
+		margin-bottom: 15px;
+		color: #FFF;
+		line-height: 1.5;
+	}
+}
+.book-banner__title {
+	a{
+		display: block;
+		margin-bottom: 10px;
+		@include rfont;
+		font-size: 38px;
+		line-height: 1;
+		text-shadow: 0 1px 1px rgba(0,0,0,.75);
+		font-weight: normal;
+	}
+	span{
+		display: block;
+		color: #FFF;
+	}
+}
+.book-banner__more{
+	margin-top: 30px;
+	a{
+		@extend %worn-button;
+	}
+}
+//books
+.books{
+	margin-bottom: 160px;
+	overflow: hidden;
+}
+.books__list{
+	margin-right: -20px;
+}
+.books__item{
+	float: left;
+	width: 535px;
+	height: 294px;
+	margin: 0 12px 15px 0;
+	border: 1px solid #3c3836;
+	background: rgba(0,0,0,.62);
+	box-shadow: #000 0 5px 0;
+	&:hover{
+		border-color: #000;
+		background: url(../img/books-bg.png) rgba(130,86,59,.62);
+		.books__rating-info{
+			color: #fff;
+		}
+	}
+}
+.books__left{
+	float: left;
+	width: 180px;
+	text-align: center;
+}
+.books__pic{
+	padding: 25px 0 18px 0;
+}
+.books__rating{
+	margin-bottom: 10px;
+	font-size: 0;
+	img {
+		margin: 0 2px;
+	}
+}
+.books__rating-info{
+	text-align: center;
+	font-size: 9px;
+	color: #b1b1b1;
+	text-shadow: #000 0 1px 1px;
+	text-transform: uppercase;
+}
+.books__right{
+	padding: 25px 35px 0 0;
+	overflow: hidden;
+}
+.books__detail{
+	margin-bottom: 20px;
+	a{
+		display: block;
+		margin-bottom: 10px;
+		@include rfont;
+		font-size: 28px;
+		line-height: 1;
+		text-shadow: 0 1px 1px rgba(0,0,0,.75);
+		font-weight: normal;
+	}
+	span{
+		display: block;
+		color: #FFF;
+	}
+	p{
+		font-size: 12px;
+		color: #FFF;
+		line-height: 1.5;
+	}
+}
+.books__social{
+	padding-left: 5px;
+	margin-bottom: 20px;
+	opacity: 0.4;
+}
+.books__links{
+	padding-left: 5px;
+	font-size: 0;
+	a{
+		position: relative;
+		display: inline-block;
+		padding-left: 30px;
+		margin-right: 23px;
+		@include rfont;
+		font-size: 17px;
+		text-shadow: 0 2px 0 #000;
+	}
+	i{
+		position: absolute;
+		&.ico-comm{
+			top: 4px;
+			left: 0;
+		}
+		&.ico-write{
+			top: 2px;
+			left: 5px;
+		}
+	}
+}
+//last-news
+.last-news{
+	margin: -120px 0 60px 0;
+	padding-top: 65px;
+}
+.last-news__in{
+	padding-top: 132px;
+	background: url(../img/video-bg.png) 43% 0 no-repeat;
+}
+.last-news__video{
+	width: 700px;
+	height: 435px;
+	margin: 0 0 100px 183px;
+}
+.last-news__title{
+	margin-bottom: 70px;
+	text-align: center;
+	font-size: 32px;
+	line-height: 1;
+	@include rfont;	
+	color: #e65a01;
+	h2 {
+		font-weight: normal;
+	}
+	span{
+		display: block;
+		color: #fff;
+	}
+}
+//block-list
+.block-list{
+	margin-right: -30px;
+	ul{
+		position: relative;
+	}
+	li{
+		width: 235px;
+		float: left;
+		margin: 0 24px 24px 0;
+		//border: 1px solid #3c3836;
+		box-shadow: rgba(255,255,255,.9) 0 0 1px;
+		background: rgba(0,0,0,.62);
+		font-size: 0;
+		&:hover{
+			background: url(../img/news-bg.jpg);
+		}
+	}
+	a{
+		display: block;
+		padding: 10px;
+		margin: 1px;
+	}
+	img{
+		margin-bottom: 25px;
+	}
+	span{
+		display: inline-block;
+		margin-left: 10px;
+		background: #522b09;
+		font-size: 9px;
+		text-transform: uppercase;
+		padding: 5px 5px 3px;
+		line-height: 1;
+		color: #fff;
+		text-shadow: 0 1px 1px #000;
+	}
+	p {
+		padding: 10px;
+		font-size: 12px;
+		color: #FFF;
+		line-height: 1.5;
+	}
+}
+//social-plugs
+.social-plugs{
+	margin-bottom: 25px;
+}
+//tabs
+.tabs__nav{
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 0;
+	li{
+		display: inline-block;
+		height: 42px;
+		line-height: 42px;
+		padding: 0 20px;
+		@include rfont;
+		font-size: 21px;
+		color: #FFF;
+		cursor: pointer;
+		&:hover{
+			color: #ebb444;
+		}
+		&.is-active{
+			background: url(../img/tabs-bg.png);
+			color: #000;
+			cursor: default;
+		}
+	}
+}
+.tabs__content{
+	margin-bottom: 60px;
+	.block-list{
+		margin: 0 0 0 35px;
+	}
+}

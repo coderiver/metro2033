@@ -57,12 +57,37 @@ body{
 .wrapper{
 	background: url(../img/bg1.jpg) no-repeat 50% 0;
 }
+.wrapper_books{
+	background: url(../img/bg2.jpg) no-repeat 50% 0;
+}
+.wrapper_news{
+	background: none;
+}
+.wrapper_tabs{
+	background: url(../img/bg3.jpg) no-repeat 50% 0;
+}
 // resets
 a img,fieldset{
 	border:none;
 }
 a{
 	color: #FFB23D;
+	text-decoration: none;
+}
+.ico-user{
+	@include s($icons, ico-user);
+}
+.ico-mail{
+	@include s($icons, ico-mail);
+}
+.ico-setting{
+	@include s($icons, ico-setting);
+}
+.ico-comm{
+	@include s($icons, ico-comm);
+}
+.ico-write{
+	@include s($icons, ico-write);
 }
 %worn-button{
 	font-size: 19px;

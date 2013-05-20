@@ -63,8 +63,22 @@ body{
 .wrapper_news{
 	background: none;
 }
-.wrapper_tabs{
+.wrapper_tabs, .wrapper_profile{
 	background: url(../img/bg3.jpg) no-repeat 50% 0;
+}
+.btn{
+	a, button{
+		display: inline-block;
+		height: 30px;
+		padding: 0 10px;
+		@include box-shadow(0 3px 0 #1C0601);
+		background: url(../img/worn1.jpg);
+		font-size: 14px;
+		color: #000;
+		text-shadow: 0 1px 1px #CFA16A;
+		line-height: 30px;		
+		text-transform: uppercase;
+	}
 }
 // resets
 a img,fieldset{
@@ -88,6 +102,15 @@ a{
 }
 .ico-write{
 	@include s($icons, ico-write);
+}
+.ico-work{
+	@include s($icons, ico-work);
+}
+.ico-metro{
+	@include s($icons, ico-metro);
+}
+.ico-patron{
+	@include s($icons, ico-patron);
 }
 %worn-button{
 	font-size: 19px;

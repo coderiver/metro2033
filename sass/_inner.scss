@@ -284,3 +284,354 @@
 		margin: 0 0 0 35px;
 	}
 }
+//profile
+.profile{
+	margin: 5px 10px 22px 0;
+	padding: 23px 15px 18px 23px;
+	background: rgba(130,86,59,.62);
+	text-shadow: rgba(0,0,0,.75) 0 1px 1px;
+}
+.profile__info{
+	margin-bottom: 20px;
+	@extend %clr;
+}
+.profile__ava{
+	float: left;
+	margin-right: 13px;
+	img{
+		display: block;
+		border: 6px solid #fff;
+		box-shadow: rgba(0,0,0,.73) 0 2px 2px;
+	}
+}
+.profile__desc{
+	float: left;
+	width: 410px;
+}
+.profile__name{
+	margin-bottom: 10px;
+	@include rfont;
+	font-size: 23px;
+	color: #f8ead6;
+	line-height: 1;
+}
+.profile__social{
+	margin-bottom: 10px;
+	@extend %clr;
+	li{
+		float: left;
+		margin-right: 5px;
+		list-style: none;
+	}
+	a{
+		display: block;
+		box-shadow: rgba(0,0,0,1) 0 0 1px, rgba(0,0,0,.3) 0 1px 0 inset, rgba(255,255,255,.3) 0 -1px 0 inset;
+	}
+	@each $s in fb,vk,mr,tw,yr,lj,ok{
+		.profile__#{$s}{
+			@include s($icons, profile__#{$s});
+		}
+	}
+}
+.profile__activity{
+	font-size: 11px;
+	color: #FFF;
+	text-transform: uppercase;
+	span{
+		display: block;
+		text-transform: none;
+	}
+}
+.profile__lvl{
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #a27b5d;
+	@extend %clr;
+	strong{
+		float: left;
+		margin-right: 20px;
+		@include rfont;
+		font-size: 28px;
+		color: #ffcf8a;
+		font-weight: normal;
+		line-height: 1;
+	}
+	.border{
+		position: relative;
+		float: left;
+		width: 358px;
+		margin-top: 6px;		
+		border-width: 10px 21px;
+		span, i{
+			position: absolute;
+			height: 14px;
+		}
+		span{
+			top: -7px;
+			right: -17px;
+			bottom: -7px;
+			left: -17px;			
+		}
+		i{
+			top: 0;
+			left: 0;
+			background: url(../img/lvl.jpg);
+			box-shadow: #f6de91 0 0 5px 2px inset;
+		}
+	}
+}
+.profile__statistic{
+	margin-bottom: 15px;
+	padding-left: 5px;
+	strong{
+		margin-bottom: 5px;
+		@include rfont;
+		font-size: 26px;
+		color: #f0e0c9;
+		font-weight: normal;
+	}
+	ul{
+		overflow: hidden;
+	}
+	li{
+		float: left;
+		width: 90px;
+		margin-left: 25px;
+		padding: 0 0 5px 25px;
+		border-left: 1px solid #986f4d;
+		color: #f1e4d1;
+		font-size: 32px;
+		list-style: none;
+		span{
+			display: block;
+			min-height: 50px;
+			@include rfont;
+			font-size: 16px;
+			color: #ffcf8a;
+			line-height: 1.0;
+		}
+		&.profile__pvp{
+			width: auto;
+		}
+		&:first-child{
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+	}
+}
+.profile__progress{
+	strong{		
+		@include rfont;
+		font-size: 16px;
+		font-weight: normal;
+		color: #ffcf8a;
+	}
+	ul{
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	li{
+		float: left;
+		width: 80px;
+		margin-right: 15px;
+		list-style: none;
+	}
+	img{
+		box-shadow: rgba(0,0,0,.75) 0 2px 2px;
+	}
+	p{
+		margin-top: 10px;
+		font-size: 10px;
+		color: #FFF;
+		span{
+			display: block;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+	}
+}
+//creative
+.creative{
+	.border{
+		margin-bottom: 20px;
+		height: 1px;
+		@include rfont;
+		font-size: 23px;
+		color: #f8ead6;
+		text-align: center;
+		span{
+			position: relative;
+			top: -17px;
+			text-transform: uppercase;
+		}
+	}
+}
+.creative__content{
+	margin-right: 10px;
+	padding: 0 10px;
+}
+.creative__item{
+	border-top: 1px solid #a27b5d;
+	overflow: hidden;
+	&:first-child{
+		border: none;
+	}
+}
+.creative__top{
+	overflow: hidden;
+	.creative__rating{
+		float: right;
+	}
+	.creative__name{
+		float: left;
+	}
+}
+.creative__name{
+	padding: 10px 0 15px 0;
+	a{
+		@include rfont;
+		font-size: 16px;
+		color: #ffcf8a;
+		text-transform: uppercase;
+	}
+	span{
+		display: block;
+		font-size: 11px;
+		color: #949494;
+	}
+}
+.creative__rating{
+	padding: 10px 0 15px 0;
+	overflow: hidden;
+	li{
+		float: left;
+		font-size: 0;
+		&:first-child{
+			margin-right: 15px;
+		}		
+	}
+	span, strong{
+		display: inline-block;
+		vertical-align: middle;		
+	}
+	span{
+		margin-right: 8px;
+		color: #949494;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	strong{
+		font-weight: normal;
+		@include rfont;
+		font-size: 20px;
+		color: #f0e0c9;
+	}
+}
+.creative__desc{
+	margin-bottom: 15px;
+	p{
+		font-size: 12px;
+		color: #FFF;
+		line-height: 1.5;
+	}
+}
+.creative__block{
+	float: left;
+	width: 200px;	
+	.creative__name{
+		padding: 10px 0 7px 0;
+	}
+	.creative__rating{
+		padding: 5px 0 15px;
+	}
+	&:first-child{
+		margin-right: 80px;
+	}
+}
+.creative__pic{
+	img{
+		padding: 9px;
+		border: 1px solid #433d3c;
+	}
+}
+//person
+.person{
+	position: relative;
+	width: 360px;
+	@include rfont;
+	font-size: 23px;
+	color: #f8ead6;
+	text-align: center;
+	.border{
+		position: relative;
+		top: -39px;
+		display: inline-block;
+		height: 1px;
+		text-align: center;
+		z-index: 15;
+		span{
+			position: relative;
+			top: -17px;
+			text-transform: uppercase;
+		}
+	}
+}
+.person__detail{
+	position: relative;
+	width: 382px;
+	height: 450px;
+	margin: -62px 0 -14px -12px;
+	background: #2e2a25;
+	z-index: 10;
+	img{
+		margin: 45px 0 5px 0;
+	}
+}
+.person__vuebon-1, .person__vuebon-2, .person__vuebon-3, .person__vuebon-4{
+	position: absolute;
+	z-index: 5;
+}
+.person__vuebon-1{
+	top: -21px;
+	left: -74px;
+	@include s($icons, vuebon-1);
+}
+.person__vuebon-2{
+	top: -20px;
+	right: -79px;
+	@include s($icons, vuebon-2);
+}
+.person__vuebon-3{
+	bottom: -26px;
+	right: -55px;
+	@include s($icons, vuebon-3);
+}
+.person__vuebon-4{
+	bottom: -26px;
+	left: -109px;
+	@include s($icons, vuebon-4);
+}
+//weapons
+.weapons{
+
+}
+//border
+.border{
+	border: 21px solid #fff;
+	background: #000;
+	box-shadow: #000 0 3px 5px;
+	-webkit-border-image: url(../img/border.jpg) 21 round round;
+	   -moz-border-image: url(../img/border.jpg) 21 round round;	 
+	     -o-border-image: url(../img/border.jpg) 21 round round;
+	        border-image: url(../img/border.jpg) 21 round round;
+}	
+.border-aside{
+	border: 20px solid #fff;
+	background: #000;
+	box-shadow: #000 0 3px 5px;
+	-webkit-border-image: url(../img/border-mod.jpg) 20 round round;
+	   -moz-border-image: url(../img/border-mod.jpg) 20 round round;	 
+	     -o-border-image: url(../img/border-mod.jpg) 20 round round;
+	        border-image: url(../img/border-mod.jpg) 20 round round;
+}

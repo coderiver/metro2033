@@ -43,3 +43,13 @@ $width: 1090px;
 	float: right;
 	width: 215px;
 }
+.cols_profile{
+	padding-top: 10px;
+	.cols__left{
+		width: 567px;
+	}
+	.cols__right{
+		float: left;
+		width: 400px;
+	}
+}

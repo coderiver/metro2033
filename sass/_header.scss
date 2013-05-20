@@ -96,6 +96,7 @@
 		top: 97px;
 		position: absolute;
 		width: 410px;
+		min-height: 60px;
 		label{
 			@include rfont;
 			font-size: 13px;
@@ -103,82 +104,9 @@
 			text-shadow: 0 1px 1px #000;
 			display: block;
 			padding-bottom: 6px;
-		}
-		.login__forgot{
-			font-size: 10px;
-			display: block;
-			padding-top: 2px;
-			a{
-				color: #f1e4d1;
-				text-decoration: none;
-			}
-		}
-		.login__input{
-			width: 127px;
-			padding: 7px 10px;
-			font-size: 12px;
-			color: #fff;
-			text-shadow: 0 1px 0 #000;
-			background: rgba(#000,.3);
-			border-style: none;
-			border-top: 1px solid rgba(#000, .7);
-			border-bottom: 1px solid rgba(#fff, .3);
-			display: inline-block;
-			margin-right: 14px;
-			@include placeholder-color(#fff);
-			&:focus{
-				outline:none;
-				background: rgba(#000, .6);
-			}
-		}
-		.login__submit{
-			display: inline-block;
-			cursor: pointer;
-			vertical-align: top;
-			position: relative;
-			left: -4px;
-			width: 66px;
-			height: 30px;
-			@include box-shadow(0 3px 0 #1C0601);
-			@include background-image(linear-gradient(#EFD9B1, #C37740));
-			&:before{
-				content:' ';
-				position: absolute;
-				z-index: 1;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background: url(../img/worn1.jpg) no-repeat 0 0;
-			}
-			span{
-				@include rfont;
-				font-size: 14px;
-				color: #000;
-				text-shadow: 0 1px 1px #CFA16A;
-				display: block;
-				height: 30px;
-				line-height: 30px;
-				text-align: center;
-				position: relative;
-				z-index: 2;
-				
-			}
-			input{
-				opacity: 0;
-				position: absolute;
-				z-index: 3;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				-webkit-appearance:none;
-				cursor: pointer;
-			}
-		}
+		}		
 	}
-	.login_detail{
-		width: 176px;
+	.login_detail, .login_profile{		
 		right: 30px;
 		left: auto;
 		.login__submit{
@@ -187,14 +115,98 @@
 			bottom: 2px;
 			left: auto;
 		}
+	}	
+	.login_detail{
+		width: 176px;
+	}
+	.login_profile{
+		width: 350px;
+		text-shadow: 0 1px 0 rgba(0,0,0,.7);
+		.login__links{
+			float: left;
+			margin-right: 23px;
+		}
+	}
+	.login__forgot{
+		font-size: 10px;
+		display: block;
+		padding-top: 2px;
+		a{
+			color: #f1e4d1;
+			text-decoration: none;
+		}
+	}
+	.login__input{
+		width: 127px;
+		padding: 7px 10px;
+		font-size: 12px;
+		color: #fff;
+		text-shadow: 0 1px 0 #000;
+		background: rgba(#000,.3);
+		border-style: none;
+		border-top: 1px solid rgba(#000, .7);
+		border-bottom: 1px solid rgba(#fff, .3);
+		display: inline-block;
+		margin-right: 14px;
+		@include placeholder-color(#fff);
+		&:focus{
+			outline:none;
+			background: rgba(#000, .6);
+		}
+	}
+	.login__submit{
+		display: inline-block;
+		cursor: pointer;
+		vertical-align: top;
+		position: relative;
+		left: -4px;
+		width: 66px;
+		height: 30px;
+		@include box-shadow(0 3px 0 #1C0601);
+		@include background-image(linear-gradient(#EFD9B1, #C37740));
+		&:before{
+			content:' ';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url(../img/worn1.jpg) no-repeat 0 0;
+		}
+		span{
+			@include rfont;
+			font-size: 14px;
+			color: #000;
+			text-shadow: 0 1px 1px #CFA16A;
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			position: relative;
+			z-index: 2;
+			
+		}
+		input{
+			opacity: 0;
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			-webkit-appearance:none;
+			cursor: pointer;
+		}
 	}
 	.login__links{
 		li{	
 			margin-bottom: 2px;
 			list-style: none;
+			color: #f1e4d1;
 			&:first-child{
 				margin-bottom: 7px;
-				a {
+				&, a {
 					@include rfont;
 					font-size: 14px;
 				}				
@@ -205,8 +217,7 @@
 			padding-left: 30px;
 			font-size: 10px;
 			color: #f1e4d1;
-			text-decoration: none;
-			text-shadow: 0 1px 0 rgba(0,0,0,.7);
+			text-decoration: none;			
 		}
 		i {
 			position: absolute;
@@ -222,7 +233,72 @@
 				top: 0;
 				left: 1px;
 			}
+			&.ico-work{
+				top: 1px;
+				left: 0;
+			}
+			&.ico-metro{
+				top: -1px;
+				left: 1px;
+			}
 		}
+	}	
+	.login__desc, .login__data{
+		float: left;
+	}
+	.login__desc{		
+		margin-bottom: 5px;	
+		a{
+			position: relative;
+			float: left;
+			color: #f1e4d1;
+			&.login__nick{
+				padding-left: 25px;
+				margin: 1px 12px 0 0;
+				font-size: 14px;
+				.ico-user{
+					position: absolute;
+					top: 2px;
+					left: 0;
+				}
+			}
+			&.login__messages{
+				padding-left: 19px;
+				margin-top: 4px;
+				font-size: 10px;
+				.ico-mail{
+					position: absolute;
+					top: 1px;
+					left: 0;
+				}
+			}
+		}
+	}
+	.login__patrons, .login__authority{
+		float: left;
+		color: #f1e4d1;
+		text-align: center;
+		line-height: 1;
+		span{
+			display: block;
+			font-size: 10px;
+			&:first-child{
+				font-size: 28px;
+			}
+		}
+	}
+	.login__patrons{
+		position: relative;
+		padding: 0 9px 0 16px;
+		border-right: 1px solid #2d140e;
+		.ico-patron{
+			position: absolute;
+			top: 4px;
+			left: 0;
+		}
+	}
+	.login__authority{
+		padding: 0 9px;
 	}
 }
 .header_inner{

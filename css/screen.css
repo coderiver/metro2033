@@ -351,6 +351,7 @@ a { color: #FFB23D; text-decoration: none; }
 .profile__progress p { margin-top: 10px; font-size: 10px; color: #FFF; }
 .profile__progress p span { display: block; text-transform: uppercase; line-height: 1; }
 
+.creative { margin-right: 10px; }
 .creative .border { margin-bottom: 20px; height: 1px; font-family: "Rodchenko",sans-serif; font-size: 23px; color: #f8ead6; text-align: center; }
 .creative .border span { position: relative; top: -17px; text-transform: uppercase; }
 
@@ -384,23 +385,37 @@ a { color: #FFB23D; text-decoration: none; }
 
 .creative__pic img { padding: 9px; border: 1px solid #433d3c; }
 
-.person { position: relative; width: 360px; font-family: "Rodchenko",sans-serif; font-size: 23px; color: #f8ead6; text-align: center; }
-.person .border { position: relative; top: -39px; display: inline-block; height: 1px; text-align: center; z-index: 15; }
-.person .border span { position: relative; top: -17px; text-transform: uppercase; }
+.person { margin-bottom: 30px; text-align: center; font-family: "Rodchenko",sans-serif; }
+.person .border { font-size: 23px; color: #f8ead6; }
 
-.person__detail { position: relative; width: 382px; height: 450px; margin: -62px 0 -14px -12px; background: #2e2a25; z-index: 10; }
+.person__detail { position: relative; width: 385px; height: 450px; margin: 3px 0 1px 2px; background: #2e2a25; z-index: 10; }
 .person__detail img { margin: 45px 0 5px 0; }
 
 .person__vuebon-1, .person__vuebon-2, .person__vuebon-3, .person__vuebon-4 { position: absolute; z-index: 5; }
 
-.person__vuebon-1 { top: -21px; left: -74px; background: url('../img/icons-s458726b66b.png') 0 -744px no-repeat; width: 56px; height: 48px; }
+.person__vuebon-1 { top: -6px; left: -60px; background: url('../img/icons-s458726b66b.png') 0 -744px no-repeat; width: 56px; height: 48px; }
 
-.person__vuebon-2 { top: -20px; right: -79px; background: url('../img/icons-s458726b66b.png') 0 -649px no-repeat; width: 60px; height: 85px; }
+.person__vuebon-2 { top: -7px; right: -65px; background: url('../img/icons-s458726b66b.png') 0 -649px no-repeat; width: 60px; height: 85px; }
 
-.person__vuebon-3 { bottom: -26px; right: -55px; background: url('../img/icons-s458726b66b.png') 0 -516px no-repeat; width: 89px; height: 78px; }
+.person__vuebon-3 { bottom: -12px; right: -40px; background: url('../img/icons-s458726b66b.png') 0 -516px no-repeat; width: 89px; height: 78px; }
 
-.person__vuebon-4 { bottom: -26px; left: -109px; background: url('../img/icons-s458726b66b.png') 0 -302px no-repeat; width: 100px; height: 120px; }
+.person__vuebon-4 { bottom: -11px; left: -94px; background: url('../img/icons-s458726b66b.png') 0 -302px no-repeat; width: 100px; height: 120px; }
 
-.border { border: 21px solid #fff; background: #000; box-shadow: #000 0 3px 5px; -webkit-border-image: url(../img/border.jpg) 21 round round; -moz-border-image: url(../img/border.jpg) 21 round round; -o-border-image: url(../img/border.jpg) 21 round round; border-image: url(../img/border.jpg) 21 round round; }
+.weapons, .equipment { margin-bottom: 40px; }
+.weapons.border-aside .border, .equipment.border-aside .border { top: -20px; border-width: 15px 21px; font-size: 11px; color: #b1b1b1; text-transform: uppercase; }
+.weapons.border-aside .border span, .equipment.border-aside .border span { top: -6px; }
 
-.border-aside { border: 20px solid #fff; background: #000; box-shadow: #000 0 3px 5px; -webkit-border-image: url(../img/border-mod.jpg) 20 round round; -moz-border-image: url(../img/border-mod.jpg) 20 round round; -o-border-image: url(../img/border-mod.jpg) 20 round round; border-image: url(../img/border-mod.jpg) 20 round round; }
+.weapons__detail { margin: 25px 0 15px 0; text-align: center; }
+.weapons__detail span { display: block; margin-bottom: 5px; font-size: 11px; color: #b1b1b1; text-transform: uppercase; }
+
+.equipment__list { padding: 25px 10px; overflow: hidden; }
+.equipment__list li { float: left; width: 110px; margin-left: 20px; text-align: center; color: #b1b1b1; list-style: none; }
+.equipment__list li:first-child { margin: 0; }
+.equipment__list span { text-transform: uppercase; }
+.equipment__list img { margin: 10px 0; }
+
+.border { border: 21px solid #000; background: #000; box-shadow: #000 0 3px 5px; -webkit-border-image: url(../img/border.jpg) 21 round round; -moz-border-image: url(../img/border.jpg) 21 round round; -o-border-image: url(../img/border.jpg) 21 round round; border-image: url(../img/border.jpg) 21 round round; }
+.border span { display: block; text-align: center; position: relative; top: -17px; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.border-aside { position: relative; border: 5px solid #000; background: url(../img/border-mod-bg.jpg); box-shadow: #000 0 3px 5px; -webkit-border-image: url(../img/border-mod.jpg) 5 round round; -moz-border-image: url(../img/border-mod.jpg) 5 round round; -o-border-image: url(../img/border-mod.jpg) 5 round round; border-image: url(../img/border-mod.jpg) 5 round round; }
+.border-aside .border { position: absolute; top: -25px; left: 88px; width: 170px; height: 1px; text-align: center; z-index: 15; }

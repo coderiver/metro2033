@@ -45,7 +45,7 @@ a { color: #FFB23D; text-decoration: none; }
 
 .ico-patron { background: url('../img/icons-s458726b66b.png') 0 -1037px no-repeat; width: 13px; height: 33px; }
 
-.header .header__register, .mainslider .slide .slide__more a, .footer .footer__register, .book-banner__more a { font-size: 19px; display: inline-block; text-shadow: 0 1px 1px #FAD15F; color: #0d0f09; font-family: "Rodchenko",sans-serif; height: 42px; line-height: 42px; padding: 0 22px; text-decoration: none; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fad867), color-stop(100%, #ed8a31)); background-image: -webkit-linear-gradient(#fad867, #ed8a31); background-image: -moz-linear-gradient(#fad867, #ed8a31); background-image: -o-linear-gradient(#fad867, #ed8a31); background-image: linear-gradient(#fad867, #ed8a31); position: relative; }
+.header .header__register, .mainslider .slide .slide__more a, .footer .footer__register, .book-banner__more a { font-size: 19px; display: inline-block; text-shadow: 0 1px 1px #FAD15F; color: #0d0f09; font-family: "Rodchenko",sans-serif; height: 42px; line-height: 42px; padding: 0 22px; text-decoration: none; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fad867), color-stop(100%, #ed8a31)); background-image: -webkit-linear-gradient(#fad867, #ed8a31); background-image: -moz-linear-gradient(#fad867, #ed8a31); background-image: -o-linear-gradient(#fad867, #ed8a31); background-image: -ms-linear-gradient(#fad867, #ed8a31); background-image: linear-gradient(#fad867, #ed8a31); position: relative; }
 .header .header__register span, .mainslider .slide .slide__more a span, .footer .footer__register span, .book-banner__more a span { position: relative; z-index: 2; }
 .header .header__register:before, .mainslider .slide .slide__more a:before, .footer .footer__register:before, .book-banner__more a:before { content: ' '; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: url(../img/worn.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; z-index: 1; }
 
@@ -74,7 +74,7 @@ a { color: #FFB23D; text-decoration: none; }
 
 .jspPane { position: absolute; width: 100% !important; }
 
-.jspVerticalBar { position: absolute; top: 0; right: 0; width: 6px; height: 100%; -webkit-transition: opacity, 0.2s, linear; -moz-transition: opacity, 0.2s, linear; -o-transition: opacity, 0.2s, linear; transition: opacity, 0.2s, linear; -webkit-transform: translateZ(0); transform: translateZ(0); }
+.jspVerticalBar { position: absolute; top: 0; right: 0; width: 6px; height: 100%; -webkit-transition: opacity, 0.2s, linear; -moz-transition: opacity, 0.2s, linear; -ms-transition: opacity, 0.2s, linear; -o-transition: opacity, 0.2s, linear; transition: opacity, 0.2s, linear; -webkit-transform: translateZ(0); transform: translateZ(0); }
 
 .jspHorizontalBar { position: absolute; bottom: 0; left: 0; width: 100%; height: 16px; background: red; display: none; }
 
@@ -133,7 +133,7 @@ a { color: #FFB23D; text-decoration: none; }
 .header .login__input:-moz-placeholder { color: white; }
 .header .login__input::-webkit-input-placeholder { color: white; }
 .header .login__input:focus { outline: none; background: rgba(0, 0, 0, 0.6); }
-.header .login__submit { display: inline-block; cursor: pointer; vertical-align: top; position: relative; left: -4px; width: 66px; height: 30px; -webkit-box-shadow: 0 3px 0 #1c0601; -moz-box-shadow: 0 3px 0 #1c0601; box-shadow: 0 3px 0 #1c0601; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efd9b1), color-stop(100%, #c37740)); background-image: -webkit-linear-gradient(#efd9b1, #c37740); background-image: -moz-linear-gradient(#efd9b1, #c37740); background-image: -o-linear-gradient(#efd9b1, #c37740); background-image: linear-gradient(#efd9b1, #c37740); }
+.header .login__submit { display: inline-block; cursor: pointer; vertical-align: top; position: relative; left: -4px; width: 66px; height: 30px; -webkit-box-shadow: 0 3px 0 #1c0601; -moz-box-shadow: 0 3px 0 #1c0601; box-shadow: 0 3px 0 #1c0601; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efd9b1), color-stop(100%, #c37740)); background-image: -webkit-linear-gradient(#efd9b1, #c37740); background-image: -moz-linear-gradient(#efd9b1, #c37740); background-image: -o-linear-gradient(#efd9b1, #c37740); background-image: -ms-linear-gradient(#efd9b1, #c37740); background-image: linear-gradient(#efd9b1, #c37740); }
 .header .login__submit:before { content: ' '; position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background: url(../img/worn1.jpg) no-repeat 0 0; }
 .header .login__submit span { font-family: "Rodchenko",sans-serif; font-size: 14px; color: #000; text-shadow: 0 1px 1px #CFA16A; display: block; height: 30px; line-height: 30px; text-align: center; position: relative; z-index: 2; }
 .header .login__submit input { opacity: 0; position: absolute; z-index: 3; top: 0; left: 0; bottom: 0; right: 0; -webkit-appearance: none; cursor: pointer; }
@@ -181,8 +181,8 @@ a { color: #FFB23D; text-decoration: none; }
 .mainslider .mainslider__slider { width: 1090px; height: 356px; position: relative; }
 .mainslider .mainslider__slides { position: relative; top: -31px; width: 1090px; height: 356px; padding-top: 31px; }
 .mainslider .slide { width: 1090px; height: 356px; margin-top: 31px; color: #fff; }
-.mainslider .slide .slide__pic { position: absolute; right: 80px; top: -30px; -webkit-transition: all 0.01s; -moz-transition: all 0.01s; -o-transition: all 0.01s; transition: all 0.01s; opacity: 0; }
-.mainslider .slide .slide__pic.is-animated { opacity: 1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.mainslider .slide .slide__pic { position: absolute; right: 80px; top: -30px; -webkit-transition: all 0.01s; -moz-transition: all 0.01s; -ms-transition: all 0.01s; -o-transition: all 0.01s; transition: all 0.01s; opacity: 0; }
+.mainslider .slide .slide__pic.is-animated { opacity: 1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .mainslider .slide .slide__content { position: absolute; top: 52px; left: 52px; width: 400px; }
 .mainslider .slide .slide__content h2 { font-family: "Rodchenko",sans-serif; font-size: 38px; font-weight: normal; line-height: 1; margin-bottom: 18px; }
 .mainslider .slide .slide__content h2 span { display: block; color: #f2aa1e; }
@@ -298,8 +298,11 @@ a { color: #FFB23D; text-decoration: none; }
 
 .tabs__nav { margin-bottom: 20px; text-align: center; font-size: 0; }
 .tabs__nav li { display: inline-block; height: 42px; line-height: 42px; padding: 0 20px; font-family: "Rodchenko",sans-serif; font-size: 21px; color: #FFF; cursor: pointer; }
+.tabs__nav li a { color: #fff; }
+.tabs__nav li a:hover { color: #ebb444; }
 .tabs__nav li:hover { color: #ebb444; }
 .tabs__nav li.is-active { background: url(../img/tabs-bg.png); color: #000; cursor: default; }
+.tabs__nav li.is-active a { color: #000; }
 
 .tabs__content { margin-bottom: 60px; }
 .tabs__content .block-list { margin: 0 0 0 35px; }

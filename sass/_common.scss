@@ -66,6 +66,9 @@ body{
 .wrapper_tabs, .wrapper_profile{
 	background: url(../img/bg3.jpg) no-repeat 50% 0;
 }
+.wrapper_data{
+	background: url(../img/bg4.jpg) no-repeat 50% 0;
+}
 .btn{
 	a, button{
 		display: inline-block;
@@ -87,6 +90,19 @@ a img,fieldset{
 a{
 	color: #FFB23D;
 	text-decoration: none;
+}
+.h2 {
+	@include rfont;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #d2c7b6;
+	font-weight: normal;
+	font-size: 21px;
+	color: #f8ead6;
+}
+.h2_mod {
+	margin: 0;
+	border: none;
 }
 .ico-user{
 	@include s($icons, ico-user);
@@ -111,6 +127,9 @@ a{
 }
 .ico-patron{
 	@include s($icons, ico-patron);
+}
+.ico-play{
+	@include s($icons, ico-play);
 }
 %worn-button{
 	font-size: 19px;
